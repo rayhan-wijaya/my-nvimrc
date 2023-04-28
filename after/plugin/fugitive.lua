@@ -14,6 +14,11 @@ vim.keymap.set("n", "<leader>gu", function ()
   print("Removed: " .. filePath)
 end)
 
+vim.keymap.set("n", "<leader>gfd", function ()
+  local filePath = vim.fn.expand("%");
+  vim.cmd("G diff " .. filePath)
+end)
+
 vim.keymap.set("n", "<leader>gc", ":G commit<CR>")
 vim.keymap.set("n", "<leader>gd", ":G diff<CR>")
 vim.keymap.set("n", "<leader>god", ":G diff --staged<CR>")

@@ -32,3 +32,7 @@ local viewPDFFile = function ()
 end
 
 vim.keymap.set("n", "<leader>p", viewPDFFile)
+
+vim.keymap.set("n", "<leader>b", function ()
+  vim.cmd("!npm run build")
+end)

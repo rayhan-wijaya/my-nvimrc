@@ -14,9 +14,21 @@ vim.keymap.set("n", "<leader>gu", function ()
   print("Removed: " .. filePath)
 end)
 
+vim.keymap.set("n", "<leader>gr", function ()
+  local filePath = vim.fn.expand("%");
+  vim.cmd("G checkout " .. filePath)
+
+  print("Checked out: " .. filePath)
+end)
+
 vim.keymap.set("n", "<leader>gfd", function ()
   local filePath = vim.fn.expand("%");
   vim.cmd("G diff " .. filePath)
+end)
+
+vim.keymap.set("n", "<leader>goa", function ()
+  local filePath = vim.fn.expand("%");
+  vim.cmd("G add -p " .. filePath)
 end)
 
 vim.keymap.set("n", "<leader>gc", ":G commit<CR>")

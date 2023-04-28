@@ -24,15 +24,6 @@ end
 vim.keymap.set("n", "<leader>ul", generateCompileLatexFile(false))
 vim.keymap.set("n", "<leader>dl", generateCompileLatexFile(true))
 
-local viewPDFFile = function ()
-  local filePath = vim.fn.expand("%")
-  local command = ":! mupdf " .. filePath
-
-  vim.cmd(command)
-end
-
-vim.keymap.set("n", "<leader>p", viewPDFFile)
-
 vim.keymap.set("n", "<leader>b", function ()
   vim.cmd("!npm run build")
 end)
@@ -41,3 +32,4 @@ vim.keymap.set("n", "<leader>s", function ()
   vim.cmd("so")
   print("Sourced")
 end)
+

@@ -33,4 +33,5 @@ vim.keymap.set("n", "<leader>s", function ()
   print("Sourced")
 end)
 
-vim.keymap.set("n", "<leader>ds", ":PackerSync<CR>")
+vim.keymap.set("n", "<leader>bs", ":PackerSync<CR>")
+vim.keymap.set("n", "<leader>q", ":wqa<CR>")

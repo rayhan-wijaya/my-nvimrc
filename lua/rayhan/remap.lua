@@ -36,3 +36,8 @@ vim.keymap.set("n", "<leader>p", viewPDFFile)
 vim.keymap.set("n", "<leader>b", function ()
   vim.cmd("!npm run build")
 end)
+
+vim.keymap.set("n", "<leader>s", function ()
+  vim.cmd("so")
+  print("Sourced")
+end)

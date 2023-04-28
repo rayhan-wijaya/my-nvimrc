@@ -26,3 +26,7 @@ vim.keymap.set("n", "<leader>gsd", function ()
   vim.cmd("G diff --staged")
 end)
 
+vim.keymap.set("n", "<leader>gp", function ()
+  vim.cmd("G push")
+end)
+

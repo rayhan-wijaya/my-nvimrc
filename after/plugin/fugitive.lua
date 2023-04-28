@@ -17,3 +17,12 @@ end)
 vim.keymap.set("n", "<leader>gc", function ()
   vim.cmd("G commit")
 end)
+
+vim.keymap.set("n", "<leader>gd", function ()
+  vim.cmd("G diff")
+end)
+
+vim.keymap.set("n", "<leader>gsd", function ()
+  vim.cmd("G diff --staged")
+end)
+

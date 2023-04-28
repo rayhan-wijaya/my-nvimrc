@@ -21,7 +21,7 @@ local generateCompileLatexFile = function (outputToDist)
   return compileLatexFile
 end
 
-vim.keymap.set("n", "<leader>ul", generateCompileLatexFile(false))
+vim.keymap.set("n", "<leader>ol", generateCompileLatexFile(false))
 vim.keymap.set("n", "<leader>dl", generateCompileLatexFile(true))
 
 vim.keymap.set("n", "<leader>b", function ()

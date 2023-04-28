@@ -55,4 +55,14 @@ return require('packer').startup(function(use)
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
   use('tpope/vim-surround')
+
+  -- install without yarn or npm
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use('tpope/vim-commentary')
+
+  use("nvim-tree/nvim-tree.lua")
 end)

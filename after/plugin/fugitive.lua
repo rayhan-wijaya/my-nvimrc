@@ -14,19 +14,8 @@ vim.keymap.set("n", "<leader>gu", function ()
   print("Removed: " .. filePath)
 end)
 
-vim.keymap.set("n", "<leader>gc", function ()
-  vim.cmd("G commit")
-end)
-
-vim.keymap.set("n", "<leader>gd", function ()
-  vim.cmd("G diff")
-end)
-
-vim.keymap.set("n", "<leader>gsd", function ()
-  vim.cmd("G diff --staged")
-end)
-
-vim.keymap.set("n", "<leader>gp", function ()
-  vim.cmd("G push")
-end)
+vim.keymap.set("n", "<leader>gc", ":G commit<CR>")
+vim.keymap.set("n", "<leader>gd", ":G diff<CR>")
+vim.keymap.set("n", "<leader>gsd", ":G diff --staged<CR>")
+vim.keymap.set("n", "<leader>gp", ":G push<CR>")
 

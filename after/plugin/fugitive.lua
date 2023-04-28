@@ -32,6 +32,7 @@ vim.keymap.set("n", "<leader>goa", function ()
 end)
 
 vim.keymap.set("n", "<leader>gc", ":G commit<CR>")
+vim.keymap.set("n", "<leader>goc", ":G commit --amend<CR>")
 vim.keymap.set("n", "<leader>gd", ":G diff<CR>")
 vim.keymap.set("n", "<leader>god", ":G diff --staged<CR>")
 vim.keymap.set("n", "<leader>gp", ":G push<CR>")

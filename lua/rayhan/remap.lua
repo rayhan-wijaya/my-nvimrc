@@ -36,3 +36,8 @@ end)
 vim.keymap.set("n", "<leader>ds", ":PackerSync<CR>")
 vim.keymap.set("n", "<leader>q", ":wqa<CR>")
 vim.keymap.set("n", "<leader>w", ":w<CR>")
+
+vim.keymap.set("n", "<leader>t", function ()
+  local command = vim.fn.input("Command > ")
+  vim.cmd("te " .. command .. " &")
+end)

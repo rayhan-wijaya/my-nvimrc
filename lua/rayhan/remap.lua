@@ -43,4 +43,5 @@ vim.keymap.set("n", "<leader>t", function ()
 end)
 
 vim.keymap.set("n", "<leader>b", ":b ")
+vim.keymap.set("n", "<leader>bd", ":bd<CR>")
 

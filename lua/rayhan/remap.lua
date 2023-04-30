@@ -34,7 +34,11 @@ vim.keymap.set("n", "<leader>s", function ()
 end)
 
 vim.keymap.set("n", "<leader>ds", ":PackerSync<CR>")
-vim.keymap.set("n", "<leader>q", ":wqa<CR>")
+vim.keymap.set("n", "<leader>q", function ()
+  vim.cmd(":%bd!")
+  vim.cmd(":wqa")
+end)
+
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 
 vim.keymap.set("n", "<leader>t", function ()
@@ -44,4 +48,5 @@ end)
 
 vim.keymap.set("n", "<leader>bo", ":b ")
 vim.keymap.set("n", "<leader>bd", ":bd!<CR>")
+vim.keymap.set("n", "<leader>bl", ":buffers<CR>")
 

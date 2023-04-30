@@ -24,7 +24,7 @@ end
 vim.keymap.set("n", "<leader>ol", generateCompileLatexFile(false))
 vim.keymap.set("n", "<leader>dl", generateCompileLatexFile(true))
 
-vim.keymap.set("n", "<leader>b", function ()
+vim.keymap.set("n", "<leader>pb", function ()
   vim.cmd("!npm run build")
 end)
 

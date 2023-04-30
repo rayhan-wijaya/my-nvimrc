@@ -41,3 +41,5 @@ vim.keymap.set("n", "<leader>t", function ()
   local command = vim.fn.input("Command > ")
   vim.cmd("te " .. command .. " &")
 end)
+
+vim.keymap.set("n", "<leader>b", ":b ")

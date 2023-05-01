@@ -49,5 +49,5 @@ end)
 vim.keymap.set("n", "<leader>bo", ":b ")
 vim.keymap.set("n", "<leader>bd", ":bd!<CR>")
 vim.keymap.set("n", "<leader>bl", ":buffers<CR>")
-vim.keymap.set("n", "<leader>of", ":e ")
+vim.keymap.set("n", "<leader>fo", ":e ")
 

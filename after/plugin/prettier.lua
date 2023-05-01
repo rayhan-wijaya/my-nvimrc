@@ -50,5 +50,5 @@ local generatePrettierFormat = function (checkForPrismaFiles)
   end
 end
 
-vim.keymap.set("n", "<leader>f", generatePrettierFormat(true))
+vim.keymap.set("n", "<leader>ff", generatePrettierFormat(true))
 vim.api.nvim_create_autocmd("BufWritePre", { callback = generatePrettierFormat(false) })

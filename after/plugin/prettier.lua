@@ -31,7 +31,7 @@ prettier.setup({
 
 local generatePrettierFormat = function (checkForPrismaFiles)
   return function ()
-    local filePath = vim.fn.expand("%")
+    local filePath = vim.fn.expand("%:p")
 
     local fileExtensionRegex = "%.([^%.]+)$"
     local fileExtension = string.sub(
@@ -42,7 +42,7 @@ local generatePrettierFormat = function (checkForPrismaFiles)
     if checkForPrismaFiles and fileExtension == ".prisma" then
       vim.cmd(":! npx prisma format --schema=" .. filePath)
       -- :!npx prisma format --schema=packages/db/prisma/schema.prisma
-      --
+
       return
     end
 

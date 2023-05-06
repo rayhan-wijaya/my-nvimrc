@@ -4,7 +4,7 @@ vim.keymap.set("n", "Q", "vapgq")
 
 local generateCompileLatexFile = function (outputToDist)
   local compileLatexFile = function ()
-    local filePath = vim.fn.expand("%")
+    local filePath = vim.fn.expand("%:p")
     local command = string.format("!pdflatex %s", filePath)
 
     if outputToDist then

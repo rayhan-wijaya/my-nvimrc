@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "Q", "vapgq")
 
 local generateCompileLatexFile = function (outputToDist)
@@ -29,8 +28,10 @@ vim.keymap.set("n", "<leader>pb", function ()
 end)
 
 vim.keymap.set("n", "<leader>s", function ()
+  local filePath = vim.fn.expand("%")
+
   vim.cmd("so")
-  print("Sourced")
+  print("Sourced " .. filePath)
 end)
 
 vim.keymap.set("n", "<leader>ds", ":PackerSync<CR>")
@@ -50,4 +51,5 @@ vim.keymap.set("n", "<leader>bo", ":b ")
 vim.keymap.set("n", "<leader>bd", ":bd!<CR>")
 vim.keymap.set("n", "<leader>bl", ":buffers<CR>")
 vim.keymap.set("n", "<leader>fo", ":e ")
+vim.keymap.set("n", "<leader>dp", ":! npx prisma db push<CR>")
 

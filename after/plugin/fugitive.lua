@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>gss", vim.cmd.Git)
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 
 vim.keymap.set("n", "<leader>ga", function ()
   local filePath = vim.fn.expand("%");

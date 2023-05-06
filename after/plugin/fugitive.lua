@@ -36,4 +36,5 @@ vim.keymap.set("n", "<leader>gfc", ":G commit --amend<CR>")
 vim.keymap.set("n", "<leader>gd", ":G diff<CR>")
 vim.keymap.set("n", "<leader>gsd", ":G diff --staged<CR>")
 vim.keymap.set("n", "<leader>gpus", ":G push<CR>")
+vim.keymap.set("n", "<leader>gpul", ":G push<CR>")
 

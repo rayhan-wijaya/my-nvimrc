@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+vim.keymap.set("n", "<leader>gss", vim.cmd.Git)
 
 vim.keymap.set("n", "<leader>ga", function ()
   local filePath = vim.fn.expand("%");
@@ -26,14 +26,14 @@ vim.keymap.set("n", "<leader>gfd", function ()
   vim.cmd("G diff " .. filePath)
 end)
 
-vim.keymap.set("n", "<leader>goa", function ()
+vim.keymap.set("n", "<leader>gpa", function ()
   local filePath = vim.fn.expand("%");
   vim.cmd("G add -p " .. filePath)
 end)
 
 vim.keymap.set("n", "<leader>gc", ":G commit<CR>")
-vim.keymap.set("n", "<leader>goc", ":G commit --amend<CR>")
+vim.keymap.set("n", "<leader>gfc", ":G commit --amend<CR>")
 vim.keymap.set("n", "<leader>gd", ":G diff<CR>")
-vim.keymap.set("n", "<leader>god", ":G diff --staged<CR>")
+vim.keymap.set("n", "<leader>gsd", ":G diff --staged<CR>")
 vim.keymap.set("n", "<leader>gp", ":G push<CR>")
 

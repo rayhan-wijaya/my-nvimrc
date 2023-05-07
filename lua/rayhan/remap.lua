@@ -66,3 +66,5 @@ vim.keymap.set("n", "<leader>dp", function ()
   end
 end)
 
+vim.keymap.set("n", "<leader>y", "\"*y")
+

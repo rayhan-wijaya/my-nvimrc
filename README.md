@@ -38,6 +38,5 @@ git clone https://github.com/rayhan-wijaya/my-nvimrc ~/.config/nvim
 **On Windows:**
 
 ```bash
-git clone https://github.com/rayhan-wijaya/my-nvimrc %userprofile%\AppData\Local\nvim
+git clone https://github.com/rayhan-wijaya/my-nvimrc ~\AppData\Local\nvim
 ```
-

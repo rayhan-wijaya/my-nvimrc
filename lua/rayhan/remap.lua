@@ -88,3 +88,4 @@ vim.keymap.set("n", "<leader>pdf", function ()
   local command = string.format("!mupdf %sdist\\%s.pdf", directoryPath, fileName)
   vim.cmd(command)
 end)
+

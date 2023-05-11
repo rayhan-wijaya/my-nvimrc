@@ -105,7 +105,7 @@ vim.keymap.set("n", "<leader>lprint", function ()
   local fileName = string.match(filePath, ".+[\\/](.-)%.%w+$")
   local directoryPath = string.match(filePath, "^(.*\\)[^\\]+$")
 
-  local command = string.format("! pdftoprinter %sdist\\%s.pdf", directoryPath, fileName)
+  local command = string.format("!pdftoprinter %sdist\\%s.pdf", directoryPath, fileName)
   vim.cmd(command)
 end)
 

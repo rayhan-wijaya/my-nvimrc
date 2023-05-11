@@ -19,13 +19,13 @@ prettier.setup({
     "lua"
   },
   cli_options = {
-      arrow_parens = "always",
-      bracket_spacing = true,
-      tab_width = 2,
-      use_tabs = false,
-      print_width = 80,
-      semi = true,
-      single_quote = false,
+    arrow_parens = "always",
+    bracket_spacing = true,
+    tab_width = 2,
+    use_tabs = false,
+    print_width = 80,
+    semi = true,
+    single_quote = false,
   },
 })
 

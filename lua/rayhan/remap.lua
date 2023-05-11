@@ -69,7 +69,7 @@ end)
 vim.keymap.set("n", "<leader>y", "\"*y")
 vim.keymap.set("n", "<leader>d", "\"_d")
 
-vim.keymap.set("n", "<leader>pdf", function ()
+vim.keymap.set("n", "<leader>lpd", function ()
   local filePath = vim.fn.expand("%:p")
 
   local fileExtensionRegex = "%.([^%.]+)$"

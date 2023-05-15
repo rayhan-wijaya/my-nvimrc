@@ -68,6 +68,8 @@ end)
 
 vim.keymap.set("n", "<leader>y", "\"*y")
 vim.keymap.set("n", "<leader>d", "\"_d")
+-- ^ there's overlap with the other "<leader>d" commands
+-- might need to change those
 
 vim.keymap.set("n", "<leader>lpd", function ()
   local filePath = vim.fn.expand("%:p")

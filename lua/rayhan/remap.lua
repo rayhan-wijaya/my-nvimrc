@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "Q", "vapgq")
+vim.keymap.set("n", "Q", "gqip")
 
 local generateCompileLatexFile = function (outputToDist)
   local compileLatexFile = function ()

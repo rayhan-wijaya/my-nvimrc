@@ -91,7 +91,7 @@ vim.keymap.set("n", "<leader>dpo", function ()
   vim.cmd(command)
 end)
 
-vim.keymap.set("n", "<leader>lprint", function ()
+vim.keymap.set("n", "<leader>dprint", function ()
   local filePath = vim.fn.expand("%:p")
 
   local fileExtensionRegex = "%.([^%.]+)$"

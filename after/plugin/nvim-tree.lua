@@ -19,6 +19,9 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = true,
   },
+  view = {
+    relativenumber = true,
+  },
 })
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")

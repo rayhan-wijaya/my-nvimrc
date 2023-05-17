@@ -40,7 +40,7 @@ vim.keymap.set("n", "<leader>q", function ()
   vim.cmd(":wqa")
 end)
 
-vim.keymap.set("n", "<leader>w", ":w<CR>")
+vim.keymap.set("n", "<leader>w", ":w!<CR>")
 
 vim.keymap.set("n", "<leader>t", function ()
   local command = vim.fn.input("Command > ")

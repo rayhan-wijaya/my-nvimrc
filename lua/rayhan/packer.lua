@@ -51,9 +51,6 @@ return require('packer').startup(function(use)
       run = ":MasonUpdate" -- :MasonUpdate updates registry contents
   }
 
-  use('neovim/nvim-lspconfig')
-  use('jose-elias-alvarez/null-ls.nvim')
-  use('MunifTanjim/prettier.nvim')
   use('tpope/vim-surround')
 
   -- install without yarn or npm

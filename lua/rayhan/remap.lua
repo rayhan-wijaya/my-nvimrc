@@ -111,3 +111,8 @@ vim.keymap.set("n", "<leader>dprint", function ()
   vim.cmd(command)
 end)
 
+vim.keymap.set("n", "<leader>ff", function ()
+  local filePath = vim.fn.expand("%:p")
+  vim.cmd("! npx prettier --write " .. filePath)
+end)
+

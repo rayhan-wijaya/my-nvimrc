@@ -112,6 +112,14 @@ vim.keymap.set("n", "<leader>dprint", function ()
 end)
 
 vim.keymap.set("n", "<leader>ff", function ()
+  -- i'm sorry okay, i sometimes forget to save
+
+  local hasChanged = vim.fn.getbufinfo('%')[1].changed
+
+  if hasChanged then
+    vim.cmd("w!")
+  end
+
   local filePath = vim.fn.expand("%:p")
   vim.cmd("! npx prettier --write " .. filePath)
 end)

@@ -23,7 +23,9 @@ vim.opt.termguicolors = true
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
-vim.opt.undodir = os.getenv("UserProfile") .. "/.vim/undodir"
+
+local home = is_windows and "UserProfile" or "HOME"
+vim.opt.undodir = os.getenv(home) .. "/.vim/undodir"
 
 -- why was ruler even added in vim?
 vim.opt.ruler = false

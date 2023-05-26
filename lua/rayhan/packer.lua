@@ -65,4 +65,6 @@ return require("packer").startup(function(use)
   use("nvim-tree/nvim-web-devicons")
 
   use("shaunsingh/nord.nvim")
+
+  use("ranjithshegde/ccls.nvim")
 end)

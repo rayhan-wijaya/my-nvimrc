@@ -1,28 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "Q", "gqip")
 
-local generateCompileLatexFile = function (outputToDist)
-  local compileLatexFile = function ()
-    local filePath = vim.fn.expand("%:p")
-    local command = string.format("!pdflatex %s", filePath)
-
-    if outputToDist then
-      local distDirectoryPath = string.gsub(filePath, "[^/\\]+$", "dist")
-      local outputDirectoryFlag = string.format("--output-directory %s", distDirectoryPath)
-
-      command = string.format("%s %s", command, outputDirectoryFlag)
-    end
-
-    vim.cmd(command)
-    print("Ran " .. command)
-  end
-
-  return compileLatexFile
-end
-
-vim.keymap.set("n", "<leader>ol", generateCompileLatexFile(false))
-vim.keymap.set("n", "<leader>dl", generateCompileLatexFile(true))
-
 vim.keymap.set("n", "<leader>pb", function ()
   vim.cmd("!npm run build")
 end)
@@ -67,46 +45,6 @@ vim.keymap.set("n", "<leader>dp", function ()
 end)
 
 vim.keymap.set("n", "<leader>d", "\"_d")
-
-vim.keymap.set("n", "<leader>dpo", function ()
-  local filePath = vim.fn.expand("%:p")
-
-  local fileExtensionRegex = "%.([^%.]+)$"
-  local fileExtension = string.sub(
-    filePath,
-    string.find(filePath, fileExtensionRegex)
-  )
-
-  if fileExtension ~= ".tex" then
-    return
-  end
-
-  local fileName = string.match(filePath, ".+[\\/](.-)%.%w+$")
-  local directoryPath = string.match(filePath, "^(.*\\)[^\\]+$")
-
-  local command = string.format("!mupdf %sdist\\%s.pdf", directoryPath, fileName)
-  vim.cmd(command)
-end)
-
-vim.keymap.set("n", "<leader>dprint", function ()
-  local filePath = vim.fn.expand("%:p")
-
-  local fileExtensionRegex = "%.([^%.]+)$"
-  local fileExtension = string.sub(
-    filePath,
-    string.find(filePath, fileExtensionRegex)
-  )
-
-  if fileExtension ~= ".tex" then
-    return
-  end
-
-  local fileName = string.match(filePath, ".+[\\/](.-)%.%w+$")
-  local directoryPath = string.match(filePath, "^(.*\\)[^\\]+$")
-
-  local command = string.format("!pdftoprinter %sdist\\%s.pdf", directoryPath, fileName)
-  vim.cmd(command)
-end)
 
 vim.keymap.set("n", "<leader>ff", function ()
   -- i'm sorry okay, i sometimes forget to save

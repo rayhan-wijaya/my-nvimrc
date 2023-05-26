@@ -23,6 +23,20 @@ require("nvim-tree").setup({
   on_attach = onAttach,
   renderer = {
     group_empty = true,
+    icons = {
+      git_placement = "after",
+      glyphs = {
+        git = {
+          unstaged = "U",
+          staged = "S",
+          unmerged = ":",
+          renamed = "→",
+          untracked = "?",
+          deleted = "D",
+          ignored = "I",
+        },
+      },
+    },
   },
   filters = {
     dotfiles = true,
@@ -38,4 +52,3 @@ require("nvim-tree").setup({
 })
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
-

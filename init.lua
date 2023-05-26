@@ -1,1 +1,2 @@
 require("rayhan")
+require("documents")

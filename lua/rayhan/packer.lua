@@ -63,4 +63,6 @@ return require("packer").startup(function(use)
 
   use("nvim-tree/nvim-tree.lua")
   use("nvim-tree/nvim-web-devicons")
+
+  use("rmehri01/onenord.nvim")
 end)

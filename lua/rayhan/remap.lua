@@ -12,7 +12,11 @@ vim.keymap.set("n", "<leader>s", function ()
   print("Sourced " .. filePath)
 end)
 
-vim.keymap.set("n", "<leader>ds", ":PackerSync<CR>")
+vim.keymap.set("n", "<leader>ds", function ()
+  vim.cmd(":so")
+  vim.cmd(":PackerSync")
+end)
+
 vim.keymap.set("n", "<leader>q", function ()
   vim.cmd(":%bd!")
   vim.cmd(":wqa")

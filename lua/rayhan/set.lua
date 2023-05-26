@@ -22,3 +22,5 @@ vim.opt.backup = false
 vim.opt.undofile = true
 vim.opt.undodir = os.getenv("UserProfile") .. "/.vim/undodir"
 
+-- why was ruler even added in vim?
+vim.opt.ruler = false

@@ -20,11 +20,6 @@ end)
 
 vim.keymap.set("n", "<leader>w", ":w!<CR>")
 
-vim.keymap.set("n", "<leader>t", function ()
-  local command = vim.fn.input("Command > ")
-  vim.cmd("te " .. command .. " &")
-end)
-
 vim.keymap.set("n", "<leader>bo", ":b ")
 vim.keymap.set("n", "<leader>bd", ":bd!<CR>")
 vim.keymap.set("n", "<leader>bl", ":buffers<CR>")

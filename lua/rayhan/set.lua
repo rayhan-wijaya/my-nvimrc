@@ -1,3 +1,6 @@
+local operating_system = vim.loop.os_uname().sysname
+local is_windows = operating_system == "Windows_NT"
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
@@ -26,3 +29,15 @@ vim.opt.undodir = os.getenv("UserProfile") .. "/.vim/undodir"
 vim.opt.ruler = false
 vim.opt.showmode = false
 vim.opt.statusline = "%f %m %r"
+
+if is_windows then
+  vim.opt.shell = "powershell.exe"
+  vim.opt.shellxquote = nil
+
+  vim.cmd([[
+    let &shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command '
+    let &shellquote   = ''
+    let &shellpipe    = '| Out-File -Encoding UTF8 %s'
+    let &shellredir   = '| Out-File -Encoding UTF8 %s'
+  ]])
+end

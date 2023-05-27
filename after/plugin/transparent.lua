@@ -9,5 +9,4 @@ require("transparent").setup({
   exclude_groups = {}, -- table: groups you don't want to clear
 })
 
-vim.cmd(":TransparentEnable")
 vim.keymap.set("n", "<leader>tt", ":TransparentToggle<CR>")

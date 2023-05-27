@@ -13,12 +13,6 @@ return require("packer").startup(function(use)
 	  requires = { {"nvim-lua/plenary.nvim"} }
   }
 
-  -- Install without configuration
-  use ({
-	  "projekt0n/github-nvim-theme",
-	  tag = "v0.0.7",
-  })
-
   use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 
   use("theprimeagen/harpoon")

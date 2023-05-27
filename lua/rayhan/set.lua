@@ -44,3 +44,5 @@ if is_windows then
     let &shellredir   = '| Out-File -Encoding UTF8 %s'
   ]])
 end
+
+vim.opt.mouse = nil

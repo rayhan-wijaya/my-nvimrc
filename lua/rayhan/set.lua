@@ -46,3 +46,4 @@ if is_windows then
 end
 
 vim.opt.mouse = nil
+vim.opt.guicursor = "i:block"

@@ -67,4 +67,6 @@ return require("packer").startup(function(use)
   use("shaunsingh/nord.nvim")
 
   use("ranjithshegde/ccls.nvim")
+
+  use("xiyaowong/transparent.nvim")
 end)

@@ -1,7 +1,8 @@
 # my-nvimrc
 
-This is a repo that contains my neovim configurations. Really not much more
-than that.
+This is a repo that contains my neovim configurations, designed to be minimal
+by disabling things like `ruler`, `showcmd`, `showmode`, and other unnecessary
+vim features. Really not much more than that.
 
 ## Setup
 

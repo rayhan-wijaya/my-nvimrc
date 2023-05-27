@@ -58,7 +58,7 @@ return require("packer").startup(function(use)
   use("nvim-tree/nvim-tree.lua")
   use("nvim-tree/nvim-web-devicons")
 
-  use("cocopon/iceberg.vim")
+  use("romainl/Apprentice")
 
   use("ranjithshegde/ccls.nvim")
 

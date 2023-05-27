@@ -11,5 +11,5 @@ local color_line_numbers = function ()
   })
 end
 
-vim.cmd.colorscheme("iceberg")
+vim.cmd.colorscheme("apprentice")
 color_line_numbers()

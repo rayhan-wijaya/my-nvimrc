@@ -30,6 +30,7 @@ vim.opt.undodir = os.getenv(home) .. "/.vim/undodir"
 -- why was ruler even added in vim?
 vim.opt.ruler = false
 vim.opt.showmode = false
+vim.opt.showcmd = false
 vim.opt.statusline = "%f %m %r"
 
 if is_windows then

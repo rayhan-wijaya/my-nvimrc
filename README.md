@@ -5,7 +5,7 @@ by disabling things like `ruler`, `showmode`, and other unnecessary
 vim features. Really not much more than that.
 
 The colorscheme used in this setup is
-[Nord](https://github.com/shaunsingh/nord.nvim)
+[Iceberg](https://github.com/cocopon/iceberg.vim)
 
 ## Setup
 

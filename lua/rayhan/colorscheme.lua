@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("nord")
+vim.cmd.colorscheme("kyotonight")
 
 local number_color = "#ffffff"
 local relative_number_color = "#5C6780"

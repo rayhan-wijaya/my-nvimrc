@@ -1,7 +1,7 @@
 # my-nvimrc
 
 This is a repo that contains my neovim configurations, designed to be minimal
-by disabling things like `ruler`, `showcmd`, `showmode`, and other unnecessary
+by disabling things like `ruler`, `showmode`, and other unnecessary
 vim features. Really not much more than that.
 
 The colorscheme used in this setup is

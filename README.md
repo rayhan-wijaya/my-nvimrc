@@ -5,7 +5,7 @@ by disabling things like `ruler`, `showmode`, and other unnecessary
 vim features. Really not much more than that.
 
 The colorscheme used in this setup is
-[Apprentice](https://github.com/romainl/Apprentice)
+[Apprentice](https://github.com/romainl/Apprentice).
 
 Quoted from a commit message I made about Apprentice:
 

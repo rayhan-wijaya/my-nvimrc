@@ -64,7 +64,5 @@ return require("packer").startup(function(use)
 
   use("ranjithshegde/ccls.nvim")
 
-  use("xiyaowong/transparent.nvim")
-
   use("ThePrimeagen/vim-be-good")
 end)

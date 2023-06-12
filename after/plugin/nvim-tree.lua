@@ -25,6 +25,9 @@ require("nvim-tree").setup({
     group_empty = true,
     icons = {
       git_placement = "after",
+      show = {
+        folder = false,
+      },
       glyphs = {
         git = {
           unstaged = "U",

@@ -46,6 +46,7 @@ require("nvim-tree").setup({
   },
   view = {
     relativenumber = true,
+    side = "right",
   },
   actions = {
     change_dir = {

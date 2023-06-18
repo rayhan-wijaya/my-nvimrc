@@ -74,5 +74,5 @@ return require("packer").startup(function(use)
     end
   }
 
-  use("mhinz/vim-signify")
+  use("airblade/vim-gitgutter")
 end)

@@ -62,17 +62,5 @@ return require("packer").startup(function(use)
 
   use("nvim-pack/nvim-spectre")
 
-  use {
-    "pwntester/octo.nvim",
-    requires = {
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function ()
-      require "octo".setup()
-    end
-  }
-
   use("airblade/vim-gitgutter")
 end)

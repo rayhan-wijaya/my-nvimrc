@@ -73,4 +73,6 @@ return require("packer").startup(function(use)
       require "octo".setup()
     end
   }
+
+  use("mhinz/vim-signify")
 end)

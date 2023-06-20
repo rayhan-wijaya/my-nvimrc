@@ -61,4 +61,6 @@ return require("packer").startup(function(use)
   use("ThePrimeagen/vim-be-good")
 
   use("nvim-pack/nvim-spectre")
+
+  use("Gavinok/vim-troff")
 end)

@@ -6,7 +6,11 @@ require 'nvim-treesitter.configs'.setup {
     "javascript",
     "tsx",
     "latex",
-    "astro"
+    "astro",
+    "rust",
+    "markdown",
+    "bash",
+    "c"
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

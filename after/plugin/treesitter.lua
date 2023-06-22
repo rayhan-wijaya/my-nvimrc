@@ -12,7 +12,12 @@ require 'nvim-treesitter.configs'.setup {
     "bash",
     "c",
     "gitcommit",
-    "gitignore"
+    "gitignore",
+    "hjson",
+    "html",
+    "ini",
+    "json5",
+    "make",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

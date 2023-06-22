@@ -18,6 +18,7 @@ require 'nvim-treesitter.configs'.setup {
     "ini",
     "json5",
     "make",
+    "sql",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

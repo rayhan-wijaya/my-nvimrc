@@ -10,7 +10,9 @@ require 'nvim-treesitter.configs'.setup {
     "rust",
     "markdown",
     "bash",
-    "c"
+    "c",
+    "gitcommit",
+    "gitignore"
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

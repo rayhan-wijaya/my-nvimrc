@@ -46,3 +46,5 @@ end
 
 vim.opt.mouse = nil
 vim.opt.guicursor = "i:block"
+
+vim.wo.fillchars='eob: '

@@ -67,7 +67,6 @@ vim.opt.guicursor = "i:block"
 vim.api.nvim_create_autocmd("BufEnter", {
   callback = function ()
     vim.wo.fillchars='eob: '
+    vim.cmd(":highlight clear SignColumn")
   end
 })
-
-vim.cmd(":highlight clear SignColumn")

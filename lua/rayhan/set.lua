@@ -63,3 +63,5 @@ vim.api.nvim_create_autocmd("BufEnter", {
     vim.wo.fillchars='eob: '
   end
 })
+
+vim.cmd(":highlight clear SignColumn")

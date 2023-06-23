@@ -30,7 +30,18 @@ vim.opt.undodir = os.getenv(home) .. "/.vim/undodir"
 -- why was ruler even added in vim?
 vim.opt.ruler = false
 vim.opt.showcmd = false
-vim.opt.statusline = "%f %m %r"
+
+local function get_branch()
+  return string.sub(vim.fn.system("git rev-parse --abbrev-ref HEAD"), 1, -2)
+end
+
+local statusline = ""
+statusline = statusline .. get_branch() .. " =>"
+statusline = statusline .. " %f"
+statusline = statusline .. " %m"
+statusline = statusline .. " %r"
+
+vim.opt.statusline = statusline
 
 if is_windows then
   vim.opt.shell = "powershell.exe"

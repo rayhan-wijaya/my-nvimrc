@@ -26,20 +26,6 @@ vim.keymap.set("n", "<leader>fw", ":w!<CR>")
 
 vim.keymap.set("n", "<leader>bo", ":b ")
 vim.keymap.set("n", "<leader>fo", ":e ")
-vim.keymap.set("n", "<leader>dp", function ()
-  local filePath = vim.fn.expand("%")
-
-  local fileExtensionRegex = "%.([^%.]+)$"
-  local fileExtension = string.sub(
-    filePath,
-    string.find(filePath, fileExtensionRegex)
-  )
-
-  if fileExtension == ".prisma"  then
-    vim.cmd("! npx prisma db push --schema=" .. filePath)
-    return
-  end
-end)
 
 vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>P", "\"*p")

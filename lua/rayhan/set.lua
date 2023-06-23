@@ -47,4 +47,8 @@ end
 vim.opt.mouse = nil
 vim.opt.guicursor = "i:block"
 
-vim.wo.fillchars='eob: '
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function ()
+    vim.wo.fillchars='eob: '
+  end
+})

@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<leader>po", ":!mupdf ")
+vim.keymap.set("n", "<leader>po", ":!mupdf -I ")

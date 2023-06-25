@@ -9,7 +9,7 @@ vim.keymap.set("n", "<leader>s", function ()
   local filePath = vim.fn.expand("%")
 
   vim.cmd("so")
-  print("Sourced " .. filePath)
+  print("Sourced ... " .. filePath)
 end)
 
 vim.keymap.set("n", "<leader>ds", function ()

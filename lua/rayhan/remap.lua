@@ -17,7 +17,7 @@ vim.keymap.set("n", "<leader>ds", function ()
   vim.cmd(":PackerSync")
 end)
 
-vim.keymap.set("n", "<leader>q", function ()
+vim.keymap.set("n", "<leader>Q", function ()
   vim.cmd(":%bd!")
   vim.cmd(":wqa")
 end)

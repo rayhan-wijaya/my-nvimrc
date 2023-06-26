@@ -42,3 +42,7 @@ vim.keymap.set("n", "<leader>ff", function ()
   vim.cmd(command)
 end)
 
+vim.keymap.set("n", "<leader>T", function ()
+  local parsers = vim.fn.input("Parsers ... ")
+  vim.cmd("TSInstall " .. parsers)
+end)

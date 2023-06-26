@@ -23,6 +23,7 @@ require("nvim-tree").setup({
   on_attach = onAttach,
   renderer = {
     group_empty = true,
+    root_folder_label = ":~",
     icons = {
       git_placement = "after",
       show = {

@@ -25,6 +25,7 @@ require("nvim-tree").setup({
     group_empty = true,
     root_folder_label = false,
     highlight_modified = "all",
+    indent_width = 3,
     icons = {
       git_placement = "after",
       show = {

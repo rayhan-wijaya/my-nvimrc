@@ -22,7 +22,7 @@ require("nvim-tree").setup({
   sort_by = "case_sensitive",
   on_attach = onAttach,
   renderer = {
-    group_empty = true,
+    group_empty = false,
     root_folder_label = false,
     highlight_modified = "all",
     indent_width = 3,

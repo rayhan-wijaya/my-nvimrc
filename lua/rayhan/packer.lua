@@ -51,7 +51,7 @@ return require("packer").startup(function(use)
 
   use("tpope/vim-commentary")
 
-  use("nvim-tree/nvim-tree.lua")
+  -- use("nvim-tree/nvim-tree.lua")
   use("nvim-tree/nvim-web-devicons")
 
   use("romainl/Apprentice")

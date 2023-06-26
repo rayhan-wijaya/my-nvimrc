@@ -1,3 +1,9 @@
+require ("spectre").setup({
+  line_sep_start = "",
+  line_sep = "",
+  result_padding = "      ",
+})
+
 vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").open()<CR>', {
   desc = "Open Spectre"
 })

@@ -72,3 +72,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.opt.shortmess = "filnxtToFW"
+
+vim.g.netrw_banner = 0
+vim.g.netrw_bufsettings = "nu rnu nowrap"

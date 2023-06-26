@@ -22,6 +22,15 @@ require("nvim-tree").setup({
   sort_by = "case_sensitive",
   on_attach = onAttach,
   renderer = {
+    special_files = {
+      "Cargo.toml",
+      "Makefile",
+
+      "README.markdown",
+      "readme.markdown",
+      "README.md",
+      "readme.md",
+    },
     group_empty = false,
     root_folder_label = false,
     highlight_modified = "all",

@@ -4,6 +4,10 @@ This is a repo that contains my neovim configurations, designed to be minimal
 by disabling things like `ruler`, `showmode`, and other unnecessary
 vim features. Really not much more than that.
 
+I also created
+[a fork of nvim-spectre](https://github.com/rayhan-wijaya/my-nvim-spectre)
+just to get it the way I want lol
+
 The colorscheme used in this setup is
 [Apprentice](https://github.com/romainl/Apprentice).
 

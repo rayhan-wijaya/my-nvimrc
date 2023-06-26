@@ -70,3 +70,5 @@ vim.api.nvim_create_autocmd("BufEnter", {
     vim.cmd(":highlight clear SignColumn")
   end
 })
+
+vim.opt.shortmess = "filnxtToFW"

@@ -4,8 +4,8 @@ This is a repo that contains my neovim configurations, designed to be minimal
 by disabling things like `ruler`, `showmode`, and other unnecessary
 vim features. Really not much more than that.
 
-I also created [a fork of
-nvim-spectre](https://github.com/rayhan-wijaya/my-nvim-spectre)
+I also created a fork of
+[nvim-spectre](https://github.com/rayhan-wijaya/my-nvim-spectre)
 and
 [fugitive](https://github.com/rayhan-wijaya/my-vim-fugitive)
 just to get them the way I want lol

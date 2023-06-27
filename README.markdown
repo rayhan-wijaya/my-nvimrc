@@ -8,7 +8,7 @@ I also created [a fork of
 nvim-spectre](https://github.com/rayhan-wijaya/my-nvim-spectre)
 and
 [fugitive](https://github.com/rayhan-wijaya/my-vim-fugitive)
-just to get it the way I want lol
+just to get them the way I want lol
 
 The colorscheme used in this setup is
 [Apprentice](https://github.com/romainl/Apprentice).

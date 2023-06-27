@@ -50,3 +50,7 @@ end)
 vim.keymap.set("n", "<leader>E", function ()
   vim.cmd("Explore")
 end)
+
+vim.keymap.set("n", "<leader>er", function ()
+  vim.cmd("Explore .")
+end)

@@ -48,5 +48,5 @@ vim.keymap.set("n", "<leader>T", function ()
 end)
 
 vim.keymap.set("n", "<leader>E", function ()
-  vim.cmd("E")
+  vim.cmd("Explore")
 end)

@@ -9,6 +9,7 @@ return require("packer").startup(function(use)
 	  requires = { {"nvim-lua/plenary.nvim"} }
   })
 
+  use("nvim-tree/nvim-web-devicons")
 
   use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 
@@ -47,7 +48,6 @@ return require("packer").startup(function(use)
   use("tpope/vim-repeat")
 
   -- use("nvim-tree/nvim-tree.lua")
-  use("nvim-tree/nvim-web-devicons")
 
   use("romainl/Apprentice")
 

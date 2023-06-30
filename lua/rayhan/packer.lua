@@ -54,8 +54,6 @@ return require("packer").startup(function(use)
 
   use("ranjithshegde/ccls.nvim")
 
-  use("ThePrimeagen/vim-be-good")
-
   use("rayhan-wijaya/my-nvim-spectre")
 
   use("Gavinok/vim-troff")

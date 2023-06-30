@@ -13,9 +13,6 @@ return require("packer").startup(function(use)
 
   use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 
-  use("theprimeagen/harpoon")
-  use("mbbill/undotree")
-
   use {
       "VonHeikemen/lsp-zero.nvim",
       branch = "v2.x",
@@ -42,18 +39,21 @@ return require("packer").startup(function(use)
       run = ":MasonUpdate" -- :MasonUpdate updates registry contents
   }
 
+  use("rayhan-wijaya/my-nvim-spectre")
   use("rayhan-wijaya/my-vim-fugitive")
+
+  use("mbbill/undotree")
+
   use("tpope/vim-surround")
   use("tpope/vim-commentary")
   use("tpope/vim-repeat")
-
-  -- use("nvim-tree/nvim-tree.lua")
 
   use("romainl/Apprentice")
 
   use("ranjithshegde/ccls.nvim")
 
-  use("rayhan-wijaya/my-nvim-spectre")
-
   use("Gavinok/vim-troff")
+
+  use("theprimeagen/harpoon")
+
 end)

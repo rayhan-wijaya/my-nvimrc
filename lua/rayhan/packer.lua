@@ -15,7 +15,6 @@ return require("packer").startup(function(use)
 
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
-  use("rayhan-wijaya/my-vim-fugitive")
 
   use {
       "VonHeikemen/lsp-zero.nvim",
@@ -43,6 +42,7 @@ return require("packer").startup(function(use)
       run = ":MasonUpdate" -- :MasonUpdate updates registry contents
   }
 
+  use("rayhan-wijaya/my-vim-fugitive")
   use("tpope/vim-surround")
   use("tpope/vim-commentary")
   use("tpope/vim-repeat")

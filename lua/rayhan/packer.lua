@@ -55,5 +55,4 @@ return require("packer").startup(function(use)
   use("Gavinok/vim-troff")
 
   use("theprimeagen/harpoon")
-
 end)

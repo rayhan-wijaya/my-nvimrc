@@ -64,12 +64,8 @@ end
 vim.opt.mouse = nil
 vim.opt.guicursor = "i:block"
 
-vim.api.nvim_create_autocmd({ "BufEnter", "FileType" }, {
-  callback = function ()
-    vim.wo.fillchars='eob: '
-    vim.cmd(":highlight clear SignColumn")
-  end
-})
+vim.opt.fillchars = "eob: "
+vim.opt.scl = false
 
 vim.opt.shortmess = "filnxtToFW"
 

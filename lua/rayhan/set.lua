@@ -65,7 +65,7 @@ vim.opt.mouse = nil
 vim.opt.guicursor = "i:block"
 
 vim.opt.fillchars = "eob: "
-vim.opt.scl = false
+vim.opt.scl = "no"
 
 vim.opt.shortmess = "filnxtToFW"
 

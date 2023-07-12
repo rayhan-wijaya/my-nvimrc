@@ -1,10 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "Q", "gqip")
 
-vim.keymap.set("n", "<leader>pb", function ()
-    vim.cmd("!npm run build")
-end)
-
 vim.keymap.set("n", "<leader>s", function ()
     local filePath = vim.fn.expand("%")
 

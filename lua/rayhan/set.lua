@@ -5,7 +5,7 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
 
-local tabwidth = 2
+local tabwidth = 4
 vim.opt.tabstop = tabwidth
 vim.opt.softtabstop = tabwidth
 vim.opt.shiftwidth = tabwidth

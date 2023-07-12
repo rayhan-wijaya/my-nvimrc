@@ -21,6 +21,22 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
 
+-- why was ruler even added in vim?
+vim.opt.ruler = false
+vim.opt.showcmd = false
+
+vim.opt.mouse = nil
+vim.opt.guicursor = "i:block"
+
+vim.opt.fillchars = "eob: "
+vim.opt.scl = "no"
+
+vim.opt.shortmess = "filnxtToFW"
+
+vim.g.netrw_banner = 0
+vim.g.netrw_bufsettings = "nu rnu nowrap"
+vim.g.netrw_list_hide = "^\\./$"
+
 local operating_system = vim.loop.os_uname().sysname
 local is_windows = operating_system == "Windows_NT"
 
@@ -38,19 +54,3 @@ if is_windows then
         let &shellredir   = '| Out-File -Encoding UTF8 %s'
     ]])
 end
-
--- why was ruler even added in vim?
-vim.opt.ruler = false
-vim.opt.showcmd = false
-
-vim.opt.mouse = nil
-vim.opt.guicursor = "i:block"
-
-vim.opt.fillchars = "eob: "
-vim.opt.scl = "no"
-
-vim.opt.shortmess = "filnxtToFW"
-
-vim.g.netrw_banner = 0
-vim.g.netrw_bufsettings = "nu rnu nowrap"
-vim.g.netrw_list_hide = "^\\./$"

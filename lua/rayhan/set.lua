@@ -32,13 +32,13 @@ vim.opt.ruler = false
 vim.opt.showcmd = false
 
 local function get_branch()
-  local branch = string.sub(vim.fn.system("git rev-parse --abbrev-ref HEAD"), 1, -2)
+    local branch = string.sub(vim.fn.system("git rev-parse --abbrev-ref HEAD"), 1, -2)
 
-  if branch:match("fatal") then
-    return ""
-  end
+    if branch:match("fatal") then
+        return ""
+    end
 
-  return branch
+    return branch
 end
 
 local statusline = ""
@@ -50,15 +50,15 @@ statusline = statusline .. " %r"
 vim.opt.statusline = statusline
 
 if is_windows then
-  vim.opt.shell = "powershell.exe"
-  vim.opt.shellxquote = nil
+    vim.opt.shell = "powershell.exe"
+    vim.opt.shellxquote = nil
 
-  vim.cmd([[
-    let &shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command '
-    let &shellquote   = ''
-    let &shellpipe    = '| Out-File -Encoding UTF8 %s'
-    let &shellredir   = '| Out-File -Encoding UTF8 %s'
-  ]])
+    vim.cmd([[
+        let &shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command '
+        let &shellquote   = ''
+        let &shellpipe    = '| Out-File -Encoding UTF8 %s'
+        let &shellredir   = '| Out-File -Encoding UTF8 %s'
+    ]])
 end
 
 vim.opt.mouse = nil

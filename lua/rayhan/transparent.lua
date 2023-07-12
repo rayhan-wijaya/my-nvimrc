@@ -35,6 +35,19 @@ vim.api.nvim_create_autocmd({ "BufEnter", "FileType" }, {
   end
 })
 
+vim.api.nvim_create_autocmd({ "VimLeave", "BufLeave" }, {
+  callback = function ()
+    local transparent_file = io.open(transparent_file_path, "w+")
+
+    if transparent_file == nil then
+      return
+    end
+
+    transparent_file:write(is_transparent and "true" or "false")
+    transparent_file:close()
+  end
+})
+
 vim.keymap.set("n", "<leader>te", function ()
   is_transparent = not is_transparent
   update_guibg()

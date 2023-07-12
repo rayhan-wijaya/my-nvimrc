@@ -20,9 +20,6 @@ vim.keymap.set("n", "<leader>Q", function ()
     vim.cmd(":wqa")
 end)
 
-vim.keymap.set("n", "<leader>bo", ":b ")
-vim.keymap.set("n", "<leader>fo", ":e ")
-
 vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>P", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")

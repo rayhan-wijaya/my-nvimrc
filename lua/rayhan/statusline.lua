@@ -1,5 +1,7 @@
+local timer = vim.loop.new_timer()
+
 local function get_branch()
-    local branch_result = vim.fn.system("git rev-parse --abbrev-ref HEAD")
+    local branch_result = vim.fn.system("git branch --show-current")
     local branch_name = string.sub(branch_result, 1, -2)
 
     if branch_name:match("fatal") then
@@ -9,10 +11,14 @@ local function get_branch()
     return branch_name
 end
 
-local statusline = ""
-statusline = statusline .. get_branch() ~= "" and (get_branch() .. " ->") or ""
-statusline = statusline .. " %f"
-statusline = statusline .. " %m"
-statusline = statusline .. " %r"
+timer:start(0, 0, vim.schedule_wrap(function ()
+    local branch_name = get_branch()
 
-vim.opt.statusline = statusline
+    local statusline = ""
+    statusline = statusline .. branch_name ~= "" and (branch_name .. " ->") or ""
+    statusline = statusline .. " %f"
+    statusline = statusline .. " %m"
+    statusline = statusline .. " %r"
+
+    vim.opt.statusline = statusline
+end))

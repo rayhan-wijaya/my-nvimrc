@@ -24,9 +24,8 @@ vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>P", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")
 
+-- i'm sorry okay, i sometimes forget to save
 vim.keymap.set("n", "<leader>ff", function ()
-    -- i'm sorry okay, i sometimes forget to save
-
     vim.cmd("w!")
 
     local filePath = vim.fn.expand("%:p")

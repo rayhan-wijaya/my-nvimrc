@@ -4,8 +4,8 @@ vim.keymap.set("n", "Q", "gqip")
 
 vim.keymap.set("n", "<leader>s", function ()
     local filePath = vim.fn.expand("%")
-
     vim.cmd("so")
+
     print("Sourced ... " .. filePath)
 end)
 

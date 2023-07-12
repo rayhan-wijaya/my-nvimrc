@@ -1,11 +1,12 @@
 local function get_branch()
-    local branch = string.sub(vim.fn.system("git rev-parse --abbrev-ref HEAD"), 1, -2)
+    local branch_result = vim.fn.system("git rev-parse --abbrev-ref HEAD")
+    local branch_name = string.sub(branch_result, 1, -2)
 
-    if branch:match("fatal") then
+    if branch_name:match("fatal") then
         return ""
     end
 
-    return branch
+    return branch_name
 end
 
 local statusline = ""

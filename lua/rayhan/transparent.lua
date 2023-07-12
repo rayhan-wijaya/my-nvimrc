@@ -1,4 +1,20 @@
-local is_transparent = true
+local data_dir_path = vim.fn.stdpath("data")
+local transparent_file_path = string.format("%s/transparent", data_dir_path)
+
+local function get_is_transparent()
+  local transparent_file = io.open(transparent_file_path, "r")
+
+  if transparent_file == nil then
+    return nil
+  end
+
+  local is_transparent = transparent_file:read() == "true" and true or false
+  transparent_file:close()
+
+  return is_transparent
+end
+
+local is_transparent = get_is_transparent() or false
 local old_guibg_value = nil
 
 local function update_guibg()

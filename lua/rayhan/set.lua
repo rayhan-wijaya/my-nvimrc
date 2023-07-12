@@ -1,6 +1,3 @@
-local operating_system = vim.loop.os_uname().sysname
-local is_windows = operating_system == "Windows_NT"
-
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
@@ -23,6 +20,9 @@ vim.opt.termguicolors = true
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
+
+local operating_system = vim.loop.os_uname().sysname
+local is_windows = operating_system == "Windows_NT"
 
 local home = is_windows and "UserProfile" or "HOME"
 vim.opt.undodir = os.getenv(home) .. "/.vim/undodir"

@@ -27,10 +27,6 @@ local is_windows = operating_system == "Windows_NT"
 local home = is_windows and "UserProfile" or "HOME"
 vim.opt.undodir = os.getenv(home) .. "/.vim/undodir"
 
--- why was ruler even added in vim?
-vim.opt.ruler = false
-vim.opt.showcmd = false
-
 if is_windows then
     vim.opt.shell = "powershell.exe"
     vim.opt.shellxquote = nil
@@ -42,6 +38,10 @@ if is_windows then
         let &shellredir   = '| Out-File -Encoding UTF8 %s'
     ]])
 end
+
+-- why was ruler even added in vim?
+vim.opt.ruler = false
+vim.opt.showcmd = false
 
 vim.opt.mouse = nil
 vim.opt.guicursor = "i:block"

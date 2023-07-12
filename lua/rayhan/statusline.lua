@@ -9,8 +9,8 @@ local function get_branch()
 end
 
 local statusline = ""
-statusline = statusline .. get_branch() ~= "" and (get_branch() .. " -> ") or ""
-statusline = statusline .. "%f"
+statusline = statusline .. get_branch() ~= "" and (get_branch() .. " ->") or ""
+statusline = statusline .. " %f"
 statusline = statusline .. " %m"
 statusline = statusline .. " %r"
 

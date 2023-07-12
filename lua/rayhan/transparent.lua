@@ -48,7 +48,7 @@ vim.api.nvim_create_autocmd({ "VimLeave", "BufLeave" }, {
   end
 })
 
-vim.keymap.set("n", "<leader>tt", function ()
+vim.keymap.set("n", "<leader>te", function ()
   is_transparent = not is_transparent
   update_guibg()
 end)

@@ -39,6 +39,8 @@ return require("packer").startup(function(use)
     use("rayhan-wijaya/my-nvim-spectre")
     use("rayhan-wijaya/my-vim-fugitive")
 
+    use("jlfwong/vim-mercenary")
+
     use("tpope/vim-surround")
     use("tpope/vim-commentary")
     use("tpope/vim-repeat")

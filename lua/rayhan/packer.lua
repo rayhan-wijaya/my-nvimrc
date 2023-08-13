@@ -52,4 +52,6 @@ return require("packer").startup(function(use)
     use("theprimeagen/harpoon")
 
     use("mbbill/undotree")
+
+    use("twe4ked/vim-diff-toggle")
 end)

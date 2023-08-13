@@ -38,6 +38,7 @@ return require("packer").startup(function(use)
 
     use("rayhan-wijaya/my-nvim-spectre")
     use("rayhan-wijaya/my-vim-fugitive")
+    use("rayhan-wijaya/my-vim-diff-toggle")
 
     use("jlfwong/vim-mercenary")
 
@@ -52,6 +53,4 @@ return require("packer").startup(function(use)
     use("theprimeagen/harpoon")
 
     use("mbbill/undotree")
-
-    use("twe4ked/vim-diff-toggle")
 end)

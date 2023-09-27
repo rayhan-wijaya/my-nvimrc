@@ -29,7 +29,7 @@ vim.keymap.set("n", "<leader>fe", function ()
     vim.cmd("w!")
 
     local filePath = vim.fn.expand("%:p")
-    local command = "! npx prettier --write " .. filePath
+    local command = (vim.g.format_command or "! npx prettier --write ") .. filePath
 
     vim.cmd(command)
 end)

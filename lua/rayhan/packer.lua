@@ -43,8 +43,14 @@ return require("packer").startup(function(use)
     use("jlfwong/vim-mercenary")
 
     use("tpope/vim-surround")
-    use("tpope/vim-commentary")
     use("tpope/vim-repeat")
+
+    use({
+        "numToStr/Comment.nvim",
+        config = function()
+            require('Comment').setup()
+        end,
+    })
 
     use("romainl/Apprentice")
 

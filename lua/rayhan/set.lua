@@ -10,7 +10,7 @@ vim.opt.expandtab = true
 
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "go",
-    command = "set noexpandtab"
+    command = "setlocal noexpandtab",
 })
 
 vim.opt.smartindent = true

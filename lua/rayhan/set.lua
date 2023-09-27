@@ -8,6 +8,11 @@ vim.opt.softtabstop = tabwidth
 vim.opt.shiftwidth = tabwidth
 vim.opt.expandtab = true
 
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "go",
+    command = "set noexpandtab"
+})
+
 vim.opt.smartindent = true
 
 vim.opt.wrap = false

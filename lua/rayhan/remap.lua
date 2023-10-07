@@ -33,6 +33,10 @@ vim.keymap.set("n", "<leader>fe", function ()
 
     local formatCommand = "! npx prettier --write"
 
+    if string.match(filePath, "%.html%.mustache$") then
+        formatCommand = formatCommand .. " --parser html"
+    end
+
     if fileType == "go" then
         formatCommand = "! go fmt"
     end

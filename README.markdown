@@ -4,8 +4,7 @@ This is a repo that contains my neovim configurations, designed to be minimal
 by disabling things like `ruler`, `showmode`, and other unnecessary baggage.
 Along with personalized things.
 
-The colorscheme used in this setup is
-[Apprentice](https://github.com/romainl/Apprentice).
+The colorscheme is [Apprentice](https://github.com/romainl/Apprentice).
 
 ## Setup
 

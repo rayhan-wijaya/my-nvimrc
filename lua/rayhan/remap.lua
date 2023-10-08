@@ -14,12 +14,6 @@ vim.keymap.set("n", "<leader>ds", function ()
     vim.cmd(":PackerSync")
 end)
 
--- hack for closing everything; also the second time revoking ex mode
-vim.keymap.set("n", "<leader>Q", function ()
-    vim.cmd(":%bd!")
-    vim.cmd(":wqa")
-end)
-
 vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>P", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")

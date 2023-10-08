@@ -15,7 +15,7 @@ vim.keymap.set("n", "<leader>ds", function ()
 end)
 
 vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
-vim.keymap.set({"v", "n"}, "<leader>P", "\"*p")
+vim.keymap.set({"v", "n"}, "<leader>p", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")
 
 -- i'm sorry okay, i sometimes forget to save

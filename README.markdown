@@ -1,8 +1,8 @@
 # my-nvimrc
 
-This is a repo that contains my neovim configurations, designed to be minimal
-by disabling things like `ruler`, `showmode`, and other unnecessary baggage.
-Along with personalized things.
+This is a repo that contains my neovim configurations, disabling things like
+`ruler`, `showmode`, and other unnecessary baggage. Along with personalized,
+minor things.
 
 The colorscheme is [Apprentice](https://github.com/romainl/Apprentice).
 

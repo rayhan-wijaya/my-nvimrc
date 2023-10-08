@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "Q", "gqip")
 
-vim.keymap.set("n", "<leader>s", function ()
+vim.keymap.set("n", "<leader>S", function ()
     local filePath = vim.fn.expand("%")
     vim.cmd("so")
 

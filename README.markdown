@@ -7,18 +7,6 @@ vim features. Really not much more than that.
 The colorscheme used in this setup is
 [Apprentice](https://github.com/romainl/Apprentice).
 
-Quoted from a commit message I made about Apprentice:
-
-> Man I love this. It's a contrast between other modern colorschemes. Other
-> colorschemes focus on being cool or high-contrast. The low-contrast
-> colorschemes I've seen are still too bright for me. This...this is
-> different.
->
-> In a way, this is especially useful when I'm writing LaTeX documents since
-> the vibrant colors of other colorschemes usually distract me from the
-> content. But apprentice was intentionally designed to be plain while still
-> maintaining prettiness.
-
 ## Setup
 
 ### Getting Packer ready

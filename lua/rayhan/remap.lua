@@ -43,5 +43,5 @@ vim.keymap.set("n", "<leader>T", function ()
     vim.cmd("TSInstall " .. parsers)
 end)
 
-vim.keymap.set("n", "<leader>E", ":Explore")
-vim.keymap.set("n", "<leader>er", ":Explore .")
+vim.keymap.set("n", "<leader>E", ":Explore<CR>")
+vim.keymap.set("n", "<leader>er", ":Explore .<CR>")

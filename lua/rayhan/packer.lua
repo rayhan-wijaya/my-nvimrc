@@ -36,7 +36,6 @@ return require("packer").startup(function(use)
         run = ":MasonUpdate" -- :MasonUpdate updates registry contents
     }
 
-    use("rayhan-wijaya/my-nvim-spectre")
     use("rayhan-wijaya/my-vim-fugitive")
     use("rayhan-wijaya/my-vim-diff-toggle")
 

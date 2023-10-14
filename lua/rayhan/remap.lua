@@ -7,11 +7,6 @@ vim.keymap.set("n", "<leader>S", function ()
     print("Sourced ... " .. filePath)
 end)
 
-vim.keymap.set("n", "<leader>ds", function ()
-    vim.cmd(":so")
-    vim.cmd(":PackerSync")
-end)
-
 vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>p", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")

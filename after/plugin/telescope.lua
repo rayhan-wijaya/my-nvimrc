@@ -27,7 +27,7 @@ vim.keymap.set("n", "<leader>gs", function ()
         vim.tbl_deep_extend(
             "force",
             { search = vim.fn.input("Grep ... ") },
-            themes.get_ivy()
+            themes.get_dropdown({ previewer = false })
         )
     )
 end)

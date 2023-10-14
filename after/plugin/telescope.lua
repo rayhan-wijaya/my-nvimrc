@@ -11,5 +11,11 @@ end)
 vim.keymap.set("n", "<leader>gfs", builtin.git_files)
 vim.keymap.set("n", "<leader>ds", builtin.diagnostics)
 vim.keymap.set("n", "<leader>gs", function ()
-    builtin.grep_string({ search = vim.fn.input("Grep ... ") })
+    builtin.grep_string(
+        vim.tbl_deep_extend(
+            "force",
+            { search = vim.fn.input("Grep ... ") },
+            themes.get_ivy()
+        )
+    )
 end)

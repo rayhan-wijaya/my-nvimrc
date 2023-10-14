@@ -15,6 +15,7 @@ local themes = require("telescope.themes")
 
 vim.keymap.set("n", "<C-p>", function ()
     builtin.find_files(themes.get_cursor({
+        previewer = false,
         layout_config = {
             width = 90,
         },

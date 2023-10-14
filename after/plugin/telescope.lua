@@ -13,6 +13,8 @@ telescope.load_extension("ui-select")
 local builtin = require("telescope.builtin")
 local themes = require("telescope.themes")
 
+local dropdown_theme = themes.get_dropdown({ previewer = false })
+
 vim.keymap.set("n", "<C-p>", function ()
     builtin.find_files(themes.get_cursor({
         previewer = false,

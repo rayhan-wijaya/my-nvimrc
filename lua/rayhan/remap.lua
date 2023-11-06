@@ -43,3 +43,5 @@ vim.keymap.set("n", "<leader>er", function () vim.cmd("Explore .") end)
 
 vim.keymap.set("n", "<C-j>", function () vim.cmd("cn") end)
 vim.keymap.set("n", "<C-k>", function () vim.cmd("cp") end)
+
+vim.cmd(":let @t=\"ggO// @ts-checkogg\"")

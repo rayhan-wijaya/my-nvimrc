@@ -28,11 +28,5 @@ vim.keymap.set("n", "<leader>ds", function ()
     builtin.diagnostics(dropdown_theme)
 end)
 vim.keymap.set("n", "<leader>gs", function ()
-    builtin.grep_string(
-        vim.tbl_deep_extend(
-            "force",
-            { search = vim.fn.input("Grep ... ") },
-            dropdown_theme
-        )
-    )
+    builtin.live_grep(dropdown_theme)
 end)

@@ -38,7 +38,6 @@ vim.g.netrw_banner = 0
 vim.g.netrw_bufsettings = "nu rnu nowrap"
 vim.g.netrw_list_hide = "^\\./$"
 
--- why was ruler even added in vim?
 vim.opt.ruler = false
 vim.opt.showcmd = false
 
@@ -61,3 +60,7 @@ if is_windows then
 end
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.nocompatible = true
+vim.opt.wildmenu = true
+vim.opt.path = vim.opt.path + "**"

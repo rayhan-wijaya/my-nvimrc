@@ -1,9 +1,9 @@
 vim.cmd("packadd packer.nvim")
 
 return require("packer").startup(function(use)
-    use "wbthomason/packer.nvim"
+    use("wbthomason/packer.nvim")
 
-    use {
+    use({
         "VonHeikemen/lsp-zero.nvim",
         branch = "v2.x",
         requires = {
@@ -22,11 +22,11 @@ return require("packer").startup(function(use)
             {"hrsh7th/cmp-nvim-lsp"}, -- Required
             {"L3MON4D3/LuaSnip"},     -- Required
         }
-    }
-    use {
+    })
+    use({
         "williamboman/mason.nvim",
         run = ":MasonUpdate" -- :MasonUpdate updates registry contents
-    }
+    })
 
     use("rayhan-wijaya/my-vim-fugitive")
     use("rayhan-wijaya/my-vim-diff-toggle")

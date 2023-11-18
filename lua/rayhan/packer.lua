@@ -40,8 +40,6 @@ return require("packer").startup(function(use)
     use("rayhan-wijaya/my-vim-fugitive")
     use("rayhan-wijaya/my-vim-diff-toggle")
 
-    use("jlfwong/vim-mercenary")
-
     use("tpope/vim-surround")
     use("tpope/vim-repeat")
 

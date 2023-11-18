@@ -38,7 +38,6 @@ vim.keymap.set("n", "<leader>T", function ()
     vim.cmd("TSInstall " .. parsers)
 end)
 
-vim.keymap.set("n", "<leader>E", function () vim.cmd("Explore") end)
 vim.keymap.set("n", "<leader>er", function () vim.cmd("Explore .") end)
 
 vim.keymap.set("n", "<C-j>", function () vim.cmd("cn") end)

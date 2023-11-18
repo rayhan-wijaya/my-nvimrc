@@ -3,14 +3,6 @@ vim.cmd("packadd packer.nvim")
 return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
 
-    use({
-        "nvim-telescope/telescope.nvim", tag = "0.1.1",
-        requires = { {"nvim-lua/plenary.nvim"} }
-    })
-    use("nvim-telescope/telescope-ui-select.nvim")
-
-    use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
-
     use {
         "VonHeikemen/lsp-zero.nvim",
         branch = "v2.x",
@@ -31,7 +23,6 @@ return require("packer").startup(function(use)
             {"L3MON4D3/LuaSnip"},     -- Required
         }
     }
-
     use {
         "williamboman/mason.nvim",
         run = ":MasonUpdate" -- :MasonUpdate updates registry contents
@@ -42,7 +33,6 @@ return require("packer").startup(function(use)
 
     use("tpope/vim-surround")
     use("tpope/vim-repeat")
-
     use({
         "numToStr/Comment.nvim",
         config = function()
@@ -51,11 +41,9 @@ return require("packer").startup(function(use)
     })
 
     use("romainl/Apprentice")
-
     use("Gavinok/vim-troff")
 
     use("theprimeagen/harpoon")
-
     use("mbbill/undotree")
 
     use("justinmk/vim-dirvish")

@@ -61,6 +61,6 @@ end
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.nocompatible = true
-vim.opt.wildmenu = true
-vim.opt.path = vim.opt.path + "**"
+vim.cmd("set nocompatible")
+vim.cmd("set path+=**")
+vim.cmd("set wildmenu")

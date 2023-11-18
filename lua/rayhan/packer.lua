@@ -46,5 +46,5 @@ return require("packer").startup(function(use)
     use("theprimeagen/harpoon")
     use("mbbill/undotree")
 
-    use("justinmk/vim-dirvish")
+    use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 end)

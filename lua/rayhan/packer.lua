@@ -43,7 +43,6 @@ return require("packer").startup(function(use)
     use("romainl/Apprentice")
     use("Gavinok/vim-troff")
 
-    use("theprimeagen/harpoon")
     use("mbbill/undotree")
 
     use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})

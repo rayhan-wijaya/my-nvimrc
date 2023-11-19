@@ -68,3 +68,4 @@ vim.cmd("set wildmenu")
 vim.cmd("autocmd FileType netrw setl bufhidden=delete")
 
 vim.cmd("colorscheme evening")
+vim.cmd("colorscheme default")

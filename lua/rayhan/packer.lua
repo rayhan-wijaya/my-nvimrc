@@ -34,17 +34,9 @@ return require("packer").startup(function(use)
     use("tpope/vim-surround")
     use("tpope/vim-repeat")
     use("tpope/vim-vinegar")
-    use({
-        "numToStr/Comment.nvim",
-        config = function()
-            require('Comment').setup()
-        end,
-    })
+    use("tpope/vim-commentary")
 
-    use("romainl/Apprentice")
     use("Gavinok/vim-troff")
 
     use("mbbill/undotree")
-
-    use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 end)

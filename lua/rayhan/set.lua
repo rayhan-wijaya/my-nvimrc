@@ -20,8 +20,6 @@ vim.opt.wrap = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = false
 
-vim.opt.termguicolors = true
-
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
@@ -66,5 +64,3 @@ vim.cmd("set path=.,**")
 vim.cmd("set wildmenu")
 
 vim.cmd("autocmd FileType netrw setl bufhidden=delete")
-
-vim.cmd("colorscheme apprentice")

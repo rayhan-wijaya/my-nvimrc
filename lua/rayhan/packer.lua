@@ -36,7 +36,6 @@ return require("packer").startup(function(use)
     use("tpope/vim-vinegar")
     use("tpope/vim-commentary")
 
-    use("romainl/Apprentice")
     use("Gavinok/vim-troff")
 
     use("mbbill/undotree")

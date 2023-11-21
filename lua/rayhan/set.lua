@@ -66,3 +66,5 @@ vim.cmd("set path=.,**")
 vim.cmd("set wildmenu")
 
 vim.cmd("autocmd FileType netrw setl bufhidden=delete")
+
+vim.cmd("colorscheme apprentice")

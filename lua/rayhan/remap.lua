@@ -36,3 +36,5 @@ vim.keymap.set("n", "<C-h>", function () vim.cmd("colder") end)
 vim.keymap.set("n", "<C-l>", function () vim.cmd("cnewer") end)
 
 vim.cmd(":let @t=\"ggO// @ts-checkoccgg\"")
+
+vim.keymap.set("n", "!", ":!")

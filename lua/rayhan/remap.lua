@@ -30,11 +30,6 @@ vim.keymap.set("n", "<leader>fe", function ()
     vim.cmd(command)
 end)
 
-vim.keymap.set("n", "<leader>T", function ()
-    local parsers = vim.fn.input("Parsers ... ")
-    vim.cmd("TSInstall " .. parsers)
-end)
-
 vim.keymap.set("n", "<leader>er", function () vim.cmd("Explore .") end)
 
 vim.keymap.set("n", "<C-j>", function () vim.cmd("cn") end)

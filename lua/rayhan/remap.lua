@@ -11,7 +11,6 @@ vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>p", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")
 
--- i'm sorry okay, i sometimes forget to save
 vim.keymap.set("n", "<leader>fe", function ()
     vim.cmd("w!")
 

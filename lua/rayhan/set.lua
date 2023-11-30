@@ -36,6 +36,9 @@ vim.g.netrw_banner = 0
 vim.g.netrw_bufsettings = "nu rnu nowrap"
 vim.g.netrw_list_hide = "^\\./$,^\\.\\./$"
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 vim.opt.ruler = false
 vim.opt.showcmd = false
 

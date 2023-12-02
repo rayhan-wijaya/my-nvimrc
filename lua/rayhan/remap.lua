@@ -23,6 +23,8 @@ vim.keymap.set("n", "<leader>fe", function ()
         formatCommand = formatCommand .. " --parser html"
     elseif fileType == "go" then
         formatCommand = "! go fmt"
+    elseif fileType == "python" then
+        formatCommand = "! black"
     end
 
     local command = formatCommand .. " " .. filePath

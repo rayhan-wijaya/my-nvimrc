@@ -1,35 +1,31 @@
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>S", function ()
-    local filePath = vim.fn.expand("%")
     vim.cmd("so")
-
-    print("Sourced ... " .. filePath)
+    print("Sourced ... " ..  vim.fn.expand("%"))
 end)
 
 vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>p", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")
 
+local formatters = {
+    go = "! go fmt",
+    python = "! black",
+
+    javascript = "! prettierd_wrapper",
+    typescript = "! prettierd_wrapper",
+    html = "! prettierd_wrapper"
+}
+
 vim.keymap.set("n", "<leader>fe", function ()
     vim.cmd("w!")
 
-    local filePath = vim.fn.expand("%:p")
-    local fileType = vim.bo.filetype
-
-    local formatCommand = "! npx prettier --write"
-
-    if string.match(filePath, "%.html%.mustache$") then
-        formatCommand = formatCommand .. " --parser html"
-    elseif fileType == "go" then
-        formatCommand = "! go fmt"
-    elseif fileType == "python" then
-        formatCommand = "! black"
+    if formatters[vim.bo.filetype] == nil then
+        return print("No formatter for file ... " .. vim.fn.expand("%"))
     end
 
-    local command = formatCommand .. " " .. filePath
-
-    vim.cmd(command)
+    vim.cmd(formatters[vim.bo.filetype] .. " " .. vim.fn.expand("%"))
 end)
 
 vim.keymap.set("n", "<C-j>", function () vim.cmd("cn") end)

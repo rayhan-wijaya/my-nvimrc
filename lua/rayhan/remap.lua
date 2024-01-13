@@ -17,6 +17,7 @@ local formatters = {
     javascript = "! prettierd_wrapper",
     typescript = "! prettierd_wrapper",
     html = "! prettierd_wrapper"
+    xml = "! xmllint --format",
 }
 
 vim.keymap.set("n", "<leader>fe", function ()

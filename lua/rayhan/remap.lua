@@ -15,6 +15,7 @@ local formatters = {
 
     -- depends on github.com/rayhan-wijaya/prettierd-wrapper
     javascript = "! prettierd_wrapper",
+    json = "! prettierd_wrapper",
     typescript = "! prettierd_wrapper",
     html = "! prettierd_wrapper",
     xml = "! xmllint --format"

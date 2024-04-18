@@ -17,6 +17,7 @@ local formatters = {
     javascript = "! prettierd_wrapper",
     json = "! prettierd_wrapper",
     typescript = "! prettierd_wrapper",
+    astro = "! prettierd_wrapper",
     html = "! prettierd_wrapper",
     xml = "! xmllint --format"
 }

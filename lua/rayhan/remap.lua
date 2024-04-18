@@ -9,11 +9,12 @@ vim.keymap.set({"v", "n"}, "<leader>y", "\"*y")
 vim.keymap.set({"v", "n"}, "<leader>p", "\"*p")
 vim.keymap.set({"v", "n"}, "<leader>d", "\"_d")
 
+-- TODO: Refactor into a config file outside `my-nvimrc`
 local formatters = {
     go = "! go fmt",
     python = "! black",
 
-    -- depends on github.com/rayhan-wijaya/prettierd-wrapper
+    -- depends on: github.com/rayhan-wijaya/prettierd-wrapper
     javascript = "! prettierd_wrapper",
     json = "! prettierd_wrapper",
     typescript = "! prettierd_wrapper",

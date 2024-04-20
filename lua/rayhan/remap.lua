@@ -17,6 +17,7 @@ local formatters = {
     -- depends on: github.com/rayhan-wijaya/prettierd-wrapper
     javascript = "! prettierd_wrapper",
     json = "! prettierd_wrapper",
+    svg = "! prettierd_wrapper",
     typescript = "! prettierd_wrapper",
     astro = "! prettierd_wrapper",
     html = "! prettierd_wrapper",

@@ -21,6 +21,7 @@ local formatters = {
     typescript = "! prettierd_wrapper",
     astro = "! prettierd_wrapper",
     html = "! prettierd_wrapper",
+    tsx = "! prettierd_wrapper",
     xml = "! xmllint --format"
 }
 

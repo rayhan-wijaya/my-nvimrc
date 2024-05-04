@@ -13,4 +13,28 @@ return require("packer").startup(function(use)
 
     use("justinmk/vim-dirvish")
     use("mbbill/undotree")
+
+    use({
+        "VonHeikemen/lsp-zero.nvim",
+        branch = "v2.x",
+        requires = {
+            {"neovim/nvim-lspconfig"},
+            {
+                "williamboman/mason.nvim",
+                run = function()
+                    pcall(vim.cmd, "MasonUpdate")
+                end,
+            },
+            {"williamboman/mason-lspconfig.nvim"},
+
+            {"hrsh7th/nvim-cmp"},
+            {"hrsh7th/cmp-nvim-lsp"},
+            {"L3MON4D3/LuaSnip"}
+        }
+    })
+
+    use({
+        "williamboman/mason.nvim",
+        run = ":MasonUpdate"
+    })
 end)

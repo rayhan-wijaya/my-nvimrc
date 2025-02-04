@@ -1,12 +1,10 @@
 # my-nvimrc
 
-everything you don't want in a neovim config--bundled up. i don't want to go too off-course off of the defaults (neo)vim establishes, since if i'm ssh'ing into something, i wouldn't want to solely depend on a bombarded config, but instead just baring with the defaults. and, weirdly, after trying this for 2 months, i found the defaults to be better!
-
 ## Setup
 
-### Getting Packer ready
+### Packer
 
-This neovim config relies on
+This config relies on
 [Packer](https://github.com/wbthomason/packer.nvim).
 
 > #### Unix, Linux Installation
@@ -25,8 +23,6 @@ This neovim config relies on
 > ```
 
 ### Cloning this repo
-
-The location of the directory you'll be cloning to differs from OS to OS.
 
 **On Linux or MacOS:**
 

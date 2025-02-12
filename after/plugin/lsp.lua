@@ -6,6 +6,25 @@ require("mason-lspconfig").setup({
         function(server_name)
             require("lspconfig")[server_name].setup({})
         end,
+        ["lua_ls"] = function()
+            local lspconfig = require("lspconfig")
+            lspconfig.lua_ls.setup({
+                settings = {
+                    Lua = {
+                        diagnostics = {
+                            globals = {
+                                "bit",
+                                "vim",
+                                "it",
+                                "describe",
+                                "before_each",
+                                "after_each",
+                            },
+                        },
+                    },
+                },
+            })
+        end
     },
 })
 

@@ -36,25 +36,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.ruler = false
 vim.opt.showcmd = false
 
-local operating_system = vim.loop.os_uname().sysname
-local is_windows = operating_system == "Windows_NT"
-
-local home = is_windows and "UserProfile" or "HOME"
-vim.opt.undodir = os.getenv(home) .. "/.vim/undodir"
-
-if is_windows then
-    vim.opt.shell = "powershell.exe"
-    vim.opt.shellxquote = nil
-
-    vim.cmd([[
-        let &shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command '
-        let &shellquote   = ''
-        let &shellpipe    = '| Out-File -Encoding UTF8 %s'
-        let &shellredir   = '| Out-File -Encoding UTF8 %s'
-    ]])
-end
-
-vim.opt.clipboard = "unnamedplus"
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
 vim.cmd("set nocompatible")
 vim.cmd("set path=**")

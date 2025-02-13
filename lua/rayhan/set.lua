@@ -1,5 +1,6 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
+
 vim.opt.colorcolumn = "80"
 
 local tabwidth = 4
@@ -26,10 +27,6 @@ vim.opt.scl = "no"
 
 vim.opt.shortmess = "filnxtToFW"
 
-vim.g.netrw_banner = 0
-vim.g.netrw_bufsettings = "nu rnu nowrap"
-vim.g.netrw_list_hide = "^\\./$,^\\.\\./$"
-
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -38,9 +35,9 @@ vim.opt.showcmd = false
 
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
-vim.cmd("set nocompatible")
-vim.cmd("set path=**")
-vim.cmd("set wildmenu")
+vim.opt.compatible = false
+vim.opt.path = "**"
+vim.opt.wildmenu = true
 
 vim.cmd([[
 	highlight Normal guibg=none

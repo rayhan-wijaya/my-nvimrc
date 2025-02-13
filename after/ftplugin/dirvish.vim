@@ -3,6 +3,10 @@ let g:dirvish_dovish_map_keys = 0
 unmap <buffer> p
 nnoremap <buffer> <C-R> <Nop>
 
+function! g:DovishDelete(target) abort
+	return 'rm -rf ' . a:target
+endfunction
+
 nmap <silent><buffer> nf <Plug>(dovish_create_file)
 nmap <silent><buffer> nd <Plug>(dovish_create_directory)
 nmap <silent><buffer> x <Plug>(dovish_delete)

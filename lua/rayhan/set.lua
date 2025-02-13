@@ -41,3 +41,10 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.cmd("set nocompatible")
 vim.cmd("set path=**")
 vim.cmd("set wildmenu")
+
+vim.cmd([[
+	highlight Normal guibg=none
+	highlight NonText guibg=none
+	highlight Normal ctermbg=none
+	highlight NonText ctermbg=none
+]])

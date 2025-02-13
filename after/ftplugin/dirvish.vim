@@ -4,7 +4,7 @@ unmap <buffer> p
 nnoremap <buffer> <C-R> <Nop>
 
 function! g:DovishDelete(target) abort
-	return 'rm -rf ' . a:target
+	return 'rm -rf "' . a:target . '"'
 endfunction
 
 nmap <silent><buffer> nf <Plug>(dovish_create_file)

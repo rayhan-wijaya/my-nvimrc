@@ -12,6 +12,8 @@ return require("packer").startup(function(use)
 	use("tpope/vim-sleuth")
 
 	use("justinmk/vim-dirvish")
+	use("roginfarrer/vim-dirvish-dovish")
+
 	use("mbbill/undotree")
 
 	use({

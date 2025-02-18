@@ -39,9 +39,7 @@ vim.opt.compatible = false
 vim.opt.path = "**"
 vim.opt.wildmenu = true
 
-vim.cmd([[
-	highlight Normal guibg=none
-	highlight NonText guibg=none
-	highlight Normal ctermbg=none
-	highlight NonText ctermbg=none
-]])
+vim.api.nvim_set_hl(0, "Normal", { guibg = "none" })
+vim.api.nvim_set_hl(0, "NonText", { guibg = "none" })
+vim.api.nvim_set_hl(0, "Normal", { ctermbg = "none" })
+vim.api.nvim_set_hl(0, "NonText", { ctermbg = "none" })

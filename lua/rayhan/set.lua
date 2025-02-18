@@ -39,7 +39,7 @@ vim.opt.compatible = false
 vim.opt.path = "**"
 vim.opt.wildmenu = true
 
-vim.api.nvim_set_hl(0, "Normal", { guibg = "none" })
-vim.api.nvim_set_hl(0, "NonText", { guibg = "none" })
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NonText", { bg = "none" })
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = "none" })
 vim.api.nvim_set_hl(0, "NonText", { ctermbg = "none" })

@@ -7,5 +7,7 @@ return {
 	"tpope/vim-sleuth",
 
 	"justinmk/vim-dirvish",
+	"roginfarrer/vim-dirvish-dovish",
+
 	"mbbill/undotree",
 }

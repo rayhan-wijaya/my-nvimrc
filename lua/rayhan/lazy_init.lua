@@ -23,7 +23,4 @@ end
 
 vim.opt.rtp:prepend(lazy_path)
 
-require("lazy").setup({
-	spec = "rayhan.lazy",
-	checker = { enabled = true },
-})
+require("lazy").setup({ spec = "rayhan.lazy" })

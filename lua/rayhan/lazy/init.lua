@@ -5,9 +5,7 @@ return {
 	"tpope/vim-repeat",
 	"tpope/vim-commentary",
 	"tpope/vim-sleuth",
-
-	"justinmk/vim-dirvish",
-	"roginfarrer/vim-dirvish-dovish",
+	"tpope/vim-eunuch",
 
 	"mbbill/undotree",
 }

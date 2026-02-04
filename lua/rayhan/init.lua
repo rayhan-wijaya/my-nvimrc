@@ -26,8 +26,6 @@ timer:start(
 			statusline = string.format("%s -> %s", branch_name, statusline)
 		end
 
-		print(statusline)
-
 		vim.opt.statusline = statusline
 	end)
 )

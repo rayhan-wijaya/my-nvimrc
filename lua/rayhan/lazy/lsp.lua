@@ -25,18 +25,6 @@ return {
 				function(server_name)
 					require("lspconfig")[server_name].setup({ capabilities = capabilities })
 				end,
-				["lua_ls"] = function()
-					local lspconfig = require("lspconfig")
-					lspconfig.lua_ls.setup({
-						settings = {
-							Lua = {
-								diagnostics = {
-									globals = { "bit", "vim", "it", "describe", "before_each", "after_each" },
-								},
-							},
-						},
-					})
-				end,
 			},
 		})
 
@@ -54,5 +42,15 @@ return {
 			}),
 			sources = cmp.config.sources({ { name = "nvim_lsp" }, { name = "luasnip" } }, { { name = "buffer" } }),
 		})
+
+		vim.lsp.config["lua_ls"] = {
+			settings = {
+				Lua = {
+					diagnostics = {
+						globals = { "bit", "vim", "it", "describe", "before_each", "after_each" },
+					},
+				},
+			},
+		}
 	end,
 }

@@ -43,6 +43,8 @@ return {
 			sources = cmp.config.sources({ { name = "nvim_lsp" }, { name = "luasnip" } }, { { name = "buffer" } }),
 		})
 
+		vim.keymap.set("n", "<leader>gl", vim.diagnostic.open_float, { noremap = true, silent = true })
+
 		vim.lsp.config["lua_ls"] = {
 			settings = {
 				Lua = {

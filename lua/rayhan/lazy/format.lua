@@ -2,6 +2,7 @@ return {
 	"sbdchd/neoformat",
 	config = function()
 		vim.g.neoformat_enabled = 1
+		vim.g.neoformat_enabled_astro = { "prettierd" }
 
 		vim.api.nvim_create_augroup("fmt", { clear = true })
 		vim.api.nvim_create_autocmd("BufWritePre", {

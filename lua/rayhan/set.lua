@@ -33,7 +33,13 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.ruler = false
 vim.opt.showcmd = false
 
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+local sysname = vim.loop.os_uname().sysname
+
+if sysname == "Linux" or sysname == "Darwin" then
+	vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+elseif sysname:find("Windows") then
+	vim.opt.undodir = os.getenv("USERPROFILE")
+end
 
 vim.opt.compatible = false
 vim.opt.path = "**"

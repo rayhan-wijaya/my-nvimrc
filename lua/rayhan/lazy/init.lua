@@ -7,4 +7,5 @@ return {
 	"tpope/vim-eunuch",
 	"mbbill/undotree",
 	"vyfor/cord.nvim",
+	{ "glacambre/firenvim", build = ":call firenvim#install(0)" },
 }

@@ -6,4 +6,5 @@ return {
 	"tpope/vim-sleuth",
 	"tpope/vim-eunuch",
 	"mbbill/undotree",
+	"vyfor/cord.nvim",
 }
